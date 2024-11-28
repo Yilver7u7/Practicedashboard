@@ -1,0 +1,39 @@
+<!-- Side navigation component with dynamic classes based on collapsed state -->
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
+
+  <!-- Logo container with collapse toggle button -->
+  <div class="logo-container">
+    <button class="logo" (click)="toggleCollapse()">A</button>
+
+    <!-- Display the logo text only when collapsed -->
+    <div class="logo-text" *ngIf="collapsed">Angular</div>
+
+    <!-- Close button (only when collapsed) -->
+    <button
+      class="btn-close rotating"
+      *ngIf="collapsed"
+      (click)="closeSidenav()">
+      <i class="fal fa-times close-icon"></i>
+    </button>
+  </div>
+
+  <!-- Navigation list for the sidenav items -->
+  <ul class="sidenav-nav">
+    <li class="sidenav-nav-item" *ngFor="let item of navData">
+      <a
+        class="sidenav-nav-link"
+        [routerLink]="[item.routeLink]"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <!-- Icon for each nav item -->
+        <i class="sidenav-link-icon" [class]="item.icon"></i>
+
+        <!-- Text for the nav item (only visible when collapsed) -->
+        <span class="sidenav-link-text" *ngIf="collapsed">
+          {{ item.label }}
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
