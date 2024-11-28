@@ -1,1 +1,5 @@
-<p>body works!</p>
+<!-- Main body element with dynamic class binding based on side navigation and screen width -->
+<div class="body" [ngClass]="getBodyClass()">
+  <!-- Angular Router Outlet for routing to different views -->
+  <router-outlet></router-outlet>
+</div>

@@ -1,4 +1,8 @@
-<router-outlet/>
+<!-- Sidenav component that emits the toggle state -->
+<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
 
-<app-sidenav/>
-
+<!-- Body component, passing collapsed state and screen width -->
+<app-body
+  [collapsed]="isSideNavCollapsed"
+  [screenWidth]="screenWidth"
+></app-body>
