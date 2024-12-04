@@ -1,10 +1,29 @@
-# PracticeDashboard
+## PracticeDashboard 🌟
+A powerful and flexible dashboard application built with Angular CLI version 18.1.4. This project is designed to provide developers with a clean and efficient starting point for creating dashboards and applications.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+## Features 🚀
+Live Reload: Seamlessly update your application during development.
+Code Scaffolding: Quickly generate components, directives, and more.
+Angular CLI Integration: Leverage Angular's CLI for smooth development and building workflows.
+
+
+Screenshot of the dashboard interface.
+
+To include a video demo, create a .gif version of your demo and embed it here:
+
+![Dashboard Demo](./assets/Dashboard.gif)
+![Dashboard Demo](./assets/Dashboard1.png)
+![Dashboard Demo](./assets/Dashboard3.png)
+![Dashboard Demo](./assets/Dashboard2.png)
 
 ## Development server
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+ 
+## Development Setup 🛠️
+Start the Development Server
+`ng serve -o`
 
 ## Code scaffolding
 
